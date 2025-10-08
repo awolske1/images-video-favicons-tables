@@ -9,7 +9,7 @@
 
         <!-- A FAVICON -->
         <!-- TO DO: add the favicon here -->
-        <link rel="icon" href="images/favicon.png"
+        <link rel="icon" href="images/favicon.ico">
 
         <!-- GOOGLE FONTS LINKS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,7 +74,7 @@
                     <p>As explained above, a decorative images is one that if you took it off the page, the user would still be able to use and understand the page fully, because the image isn't adding any information they won't have otherwise. When adding these in your HTML, you indicate that they are decorative by leaving the alt text attribute empty. You can't leave the alt attribute off completely, just blank. Generally though, you'll add decorative images using CSS.</p>
 
                     <!-- TO DO: add the image named square-red-blue to this section below. Be sure to add its height and width -->
-                    <img src="images/square-red-blue.jpg" alt="Red and blue swirling waves" width="400" height="400">
+                    <img src="images/square-red-blue.jpg" alt="" width="400" height="400">
                     <p class="credit">Photo by <a href="https://unsplash.com/@usgs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">USGS</a> on <a href="https://unsplash.com/wallpapers/cool/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
 
@@ -107,7 +107,7 @@
                     <h3><span>&#10033;&nbsp;</span> Adding Video From YouTube</h3>
                     <p>Adding a video from YouTube is as simple as copying and pasting some code. YouTube videos include embed code under the share menu for each video. Once it is open, you can choose to set some options or just copy the code and paste it into your HTML. YouTube uses a tag called an <code>iframe</code> to hold their videos. These can render more than just videos, though, including an entire web page.</p>
                     <!-- This video can be found here: https://www.youtube.com/watch?v=k9DZp16uNQk&list=RDk9DZp16uNQk&start_radio=1 I did remove the autoplay and frameborder attributes from the given code -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/k9DZp16uNQk?si=dWV-aAaRyv25S7uI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/k9DZp16uNQk?si=dWV-aAaRyv25S7uI" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </section>
             </section>
 
@@ -146,13 +146,11 @@
                         <td>10:00AM - 7:00PM</td>
                     </tr>
 
+                    
+                    <!-- TO DO: Complete the code below to create a cell that will span all columns -->
+                    <!-- Wednesday - <span class="bold">Closed</span> -->
                     <tr>
-                        <!-- TO DO: Complete the code below to create a cell that will span all columns -->
-                        <!-- Wednesday - <span class="bold">Closed</span> -->
-                    </tr>
-
-                    <tr>
-                        <td colspan="2"><span class="bold">Wednesday Closed</span></td>
+                        <td colspan="2">Wednesday - <span class="bold">Closed</span></td>
                     </tr>
 
                     <tr>
@@ -168,9 +166,12 @@
                     <tr>
                         <td>Saturday</td>
                         <!-- TO DO: Complete the code below to create a cell that will span two rows -->
-                        <td rowspan="2"><span class="bold">Closed By Appointment Only</span></td>
+                        <td rowspan="2">
+                            <span class="bold">Closed</span><br>
+                            By Appointment<br>
+                            Only
+                        </td>
                     </tr>
-
                     <tr>
                         <!-- TO DO: Complete the code below to create a cell containing that text -->
                         <td>Sunday</td>
